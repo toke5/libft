@@ -6,11 +6,11 @@
 /*   By: ttakala <ttakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 17:01:28 by ttakala           #+#    #+#             */
-/*   Updated: 2023/10/27 20:08:59 by ttakala          ###   ########.fr       */
+/*   Updated: 2023/12/22 14:36:19 by ttakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
 
 static int	ft_count_digits(long long n);
 static char	*ft_llong_to_str(long long n, int length, char *str);

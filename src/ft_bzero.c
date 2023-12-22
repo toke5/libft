@@ -6,11 +6,11 @@
 /*   By: ttakala <ttakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 18:19:57 by ttakala           #+#    #+#             */
-/*   Updated: 2023/11/09 15:45:31 by ttakala          ###   ########.fr       */
+/*   Updated: 2023/12/22 14:34:37 by ttakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stddef.h>
 
 void	ft_bzero(void *s, size_t n)
 {

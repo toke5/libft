@@ -6,11 +6,9 @@
 /*   By: ttakala <ttakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 14:15:42 by ttakala           #+#    #+#             */
-/*   Updated: 2023/10/24 14:18:30 by ttakala          ###   ########.fr       */
+/*   Updated: 2023/12/22 14:44:05 by ttakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_tolower(int c)
 {

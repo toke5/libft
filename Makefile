@@ -80,4 +80,8 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re
+norm:
+	norminette -R CheckForbiddenSourceHeader $(SRC)
+	norminette -R CheckDefine ./include/
+
+.PHONY: all clean fclean re norm

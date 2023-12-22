@@ -6,11 +6,9 @@
 /*   By: ttakala <ttakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 16:00:54 by ttakala           #+#    #+#             */
-/*   Updated: 2023/10/24 09:54:54 by ttakala          ###   ########.fr       */
+/*   Updated: 2023/12/22 14:35:24 by ttakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isdigit(int c)
 {

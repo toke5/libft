@@ -6,11 +6,11 @@
 /*   By: ttakala <ttakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 15:55:23 by ttakala           #+#    #+#             */
-/*   Updated: 2023/10/26 14:13:26 by ttakala          ###   ########.fr       */
+/*   Updated: 2023/12/22 14:38:50 by ttakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stddef.h>
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

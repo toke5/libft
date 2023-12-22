@@ -6,11 +6,11 @@
 /*   By: ttakala <ttakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 15:32:11 by ttakala           #+#    #+#             */
-/*   Updated: 2023/10/25 11:49:27 by ttakala          ###   ########.fr       */
+/*   Updated: 2023/12/22 14:38:42 by ttakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stddef.h>
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

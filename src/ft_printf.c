@@ -6,9 +6,11 @@
 /*   By: ttakala <ttakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 10:01:24 by ttakala           #+#    #+#             */
-/*   Updated: 2023/11/15 16:49:59 by ttakala          ###   ########.fr       */
+/*   Updated: 2023/12/22 14:51:03 by ttakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <unistd.h>
 
 #include "ft_printf.h"
 

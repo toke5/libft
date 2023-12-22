@@ -6,11 +6,11 @@
 /*   By: ttakala <ttakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 16:06:48 by ttakala           #+#    #+#             */
-/*   Updated: 2023/10/28 12:59:26 by ttakala          ###   ########.fr       */
+/*   Updated: 2023/12/22 14:43:41 by ttakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stddef.h>
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t s_len)
 {

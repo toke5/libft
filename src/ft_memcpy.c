@@ -6,11 +6,11 @@
 /*   By: ttakala <ttakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 18:28:23 by ttakala           #+#    #+#             */
-/*   Updated: 2023/11/10 10:34:14 by ttakala          ###   ########.fr       */
+/*   Updated: 2023/12/22 14:39:06 by ttakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stddef.h>
 
 static void
 	ft_copy_chunks(unsigned char **dst, const unsigned char **src, size_t n);

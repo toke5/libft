@@ -6,7 +6,7 @@
 /*   By: ttakala <ttakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 11:51:08 by ttakala           #+#    #+#             */
-/*   Updated: 2023/12/09 13:52:55 by ttakala          ###   ########.fr       */
+/*   Updated: 2023/12/22 14:47:26 by ttakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <unistd.h>
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 100 
+#  define BUFFER_SIZE 40
 # endif
 
 # ifndef MAX_FD

@@ -6,14 +6,14 @@
 /*   By: ttakala <ttakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 19:51:49 by ttakala           #+#    #+#             */
-/*   Updated: 2023/10/31 14:19:21 by ttakala          ###   ########.fr       */
+/*   Updated: 2023/12/22 14:38:00 by ttakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
 # include <stdlib.h>
-# include <unistd.h>
 
 typedef struct s_list
 {

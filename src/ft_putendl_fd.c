@@ -6,9 +6,11 @@
 /*   By: ttakala <ttakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 13:16:30 by ttakala           #+#    #+#             */
-/*   Updated: 2023/10/28 13:29:28 by ttakala          ###   ########.fr       */
+/*   Updated: 2023/12/22 14:40:06 by ttakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <unistd.h>
 
 #include "libft.h"
 

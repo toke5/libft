@@ -6,11 +6,9 @@
 /*   By: ttakala <ttakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 16:09:53 by ttakala           #+#    #+#             */
-/*   Updated: 2023/10/24 09:52:59 by ttakala          ###   ########.fr       */
+/*   Updated: 2023/12/22 14:35:27 by ttakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isprint(int c)
 {
