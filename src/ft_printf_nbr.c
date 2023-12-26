@@ -6,11 +6,11 @@
 /*   By: ttakala <ttakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 13:17:30 by ttakala           #+#    #+#             */
-/*   Updated: 2023/11/15 16:56:51 by ttakala          ###   ########.fr       */
+/*   Updated: 2023/12/26 11:45:11 by ttakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "ft_printf_internal.h"
 
 void	ft_printf_nbr(long long nbr, t_ret *ret)
 {

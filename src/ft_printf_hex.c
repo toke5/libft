@@ -6,11 +6,11 @@
 /*   By: ttakala <ttakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 13:53:26 by ttakala           #+#    #+#             */
-/*   Updated: 2023/11/15 16:56:33 by ttakala          ###   ########.fr       */
+/*   Updated: 2023/12/26 11:46:28 by ttakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "ft_printf_internal.h"
 
 void	ft_printf_ptr(unsigned long long ptr, t_ret *ret)
 {

@@ -6,11 +6,13 @@
 /*   By: ttakala <ttakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 11:40:14 by ttakala           #+#    #+#             */
-/*   Updated: 2023/12/09 13:52:55 by ttakala          ###   ########.fr       */
+/*   Updated: 2023/12/26 12:08:24 by ttakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include <unistd.h>
+
+#include "get_next_line_internal.h"
 
 static int	initialize_and_validate(t_line *line, int fd, char *buff)
 {

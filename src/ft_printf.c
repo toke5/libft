@@ -6,13 +6,16 @@
 /*   By: ttakala <ttakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 10:01:24 by ttakala           #+#    #+#             */
-/*   Updated: 2023/12/22 14:51:03 by ttakala          ###   ########.fr       */
+/*   Updated: 2023/12/26 11:52:58 by ttakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+#include <stdarg.h>
 
-#include "ft_printf.h"
+#include "ft_printf_internal.h"
+
+static void	ft_printf_conversion_handler(va_list args, char spec, t_ret *ret);
 
 int	ft_printf(const char *format, ...)
 {
@@ -41,23 +44,23 @@ int	ft_printf(const char *format, ...)
 	return (ret.print_len);
 }
 
-void	ft_printf_conversion_handler(va_list args, char specifier, t_ret *ret)
+static void	ft_printf_conversion_handler(va_list args, char spec, t_ret *ret)
 {
-	if (specifier == 'c')
+	if (spec == 'c')
 		ft_printf_char(va_arg(args, int), ret);
-	else if (specifier == 's')
+	else if (spec == 's')
 		ft_printf_str(va_arg(args, char *), ret);
-	else if (specifier == 'p')
+	else if (spec == 'p')
 		ft_printf_ptr(va_arg(args, unsigned long long), ret);
-	else if (specifier == 'd' || specifier == 'i')
+	else if (spec == 'd' || spec == 'i')
 		ft_printf_nbr(va_arg(args, int), ret);
-	else if (specifier == 'u')
+	else if (spec == 'u')
 		ft_printf_nbr_unsigned(va_arg(args, unsigned int), ret);
-	else if (specifier == 'x')
+	else if (spec == 'x')
 		ft_printf_hex_lowercase(va_arg(args, unsigned int), ret);
-	else if (specifier == 'X')
+	else if (spec == 'X')
 		ft_printf_hex_uppercase(va_arg(args, unsigned int), ret);
-	else if (specifier == '%')
+	else if (spec == '%')
 		ft_printf_char('%', ret);
 }
 

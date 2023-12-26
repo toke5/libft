@@ -82,6 +82,6 @@ re: fclean all
 
 norm:
 	norminette -R CheckForbiddenSourceHeader $(SRC)
-	norminette -R CheckDefine ./include/
+	norminette -R CheckDefine ./include/ $(SRC_DIR)*.h
 
 .PHONY: all clean fclean re norm
