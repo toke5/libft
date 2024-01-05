@@ -6,7 +6,7 @@
 /*   By: ttakala <ttakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 10:03:54 by ttakala           #+#    #+#             */
-/*   Updated: 2023/12/26 11:44:51 by ttakala          ###   ########.fr       */
+/*   Updated: 2024/01/05 15:04:25 by ttakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,6 @@
 # define FT_PRINTF_H
 
 int		ft_printf(const char *format, ...);
+int		ft_fprintf(int output_fd, const char *format, ...);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: ttakala <ttakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 10:01:24 by ttakala           #+#    #+#             */
-/*   Updated: 2023/12/26 11:52:58 by ttakala          ###   ########.fr       */
+/*   Updated: 2024/01/05 15:03:37 by ttakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,34 @@
 
 static void	ft_printf_conversion_handler(va_list args, char spec, t_ret *ret);
 
+int	ft_fprintf(int output_fd, const char *format, ...)
+{
+	int		i;
+	va_list	args;
+	t_ret	ret;
+
+	ret.print_len = 0;
+	ret.fail_state = 0;
+	ret.fd = output_fd;
+	i = 0;
+	va_start(args, format);
+	while (format[i] && ret.fail_state == 0)
+	{
+		if (format[i] == '%' && format[i + 1])
+		{
+			ft_printf_conversion_handler(args, format[i + 1], &ret);
+			i++;
+		}
+		else
+			ft_printf_char(format[i], &ret);
+		i++;
+	}
+	va_end(args);
+	if (ret.fail_state < 0)
+		return (-1);
+	return (ret.print_len);
+}
+
 int	ft_printf(const char *format, ...)
 {
 	int		i;
@@ -25,6 +53,7 @@ int	ft_printf(const char *format, ...)
 
 	ret.print_len = 0;
 	ret.fail_state = 0;
+	ret.fd = 1;
 	i = 0;
 	va_start(args, format);
 	while (format[i] && ret.fail_state == 0)
@@ -68,7 +97,7 @@ void	ft_printf_char(int c, t_ret *ret)
 {
 	if (ret->fail_state < 0)
 		return ;
-	if (write(1, &c, 1) < 0)
+	if (write(ret->fd, &c, 1) < 0)
 		ret->fail_state = -1;
 	else
 		ret->print_len++;

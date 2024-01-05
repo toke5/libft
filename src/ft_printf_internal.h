@@ -6,7 +6,7 @@
 /*   By: ttakala <ttakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/26 11:43:34 by ttakala           #+#    #+#             */
-/*   Updated: 2023/12/26 12:05:58 by ttakala          ###   ########.fr       */
+/*   Updated: 2024/01/05 14:58:52 by ttakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ typedef struct s_ret
 {
 	int	print_len;
 	int	fail_state;
+	int	fd;
 }	t_ret;
 
 void	ft_printf_char(int c, t_ret *ret);
