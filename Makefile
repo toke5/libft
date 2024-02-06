@@ -56,21 +56,25 @@ OBJ			= $(addprefix $(OBJ_DIR), $(addsuffix .o, $(SRC_FILES)))
 NAME = libft.a
 LIBC = ar rcs
 CC = cc
+EXTRA_FLAGS ?=
 CFLAGS = -Wall -Wextra -Werror
+CFLAGS += $(EXTRA_FLAGS)
 INCLUDE = -I./include
 OBJ_CACHE = $(OBJ_DIR).obj_cache
 
 all: $(NAME)
 
 $(OBJ_CACHE):
-	mkdir -p $(OBJ_DIR)
-	touch $(OBJ_DIR) $(OBJ_CACHE)
+	@mkdir -p $(OBJ_DIR) > /dev/null
+	@touch $(OBJ_CACHE) > /dev/null
 
 $(OBJ_DIR)%.o: $(SRC_DIR)%.c $(OBJ_CACHE)
-	$(CC) $(CFLAGS) $(INCLUDE) -c $< -o $@
+	@$(CC) $(CFLAGS) $(INCLUDE) -c $< -o $@ > /dev/null
 
 $(NAME): $(OBJ)
-	$(LIBC) $(NAME) $(OBJ)
+	@$(LIBC) $(NAME) $(OBJ) > /dev/null
+	@echo "$(CC) $(CFLAGS) $(INCLUDE) <- compilation flags used"
+	@echo "libft.a created"
 
 clean:
 	rm -rf $(OBJ_DIR)
