@@ -22,6 +22,7 @@ SRC_FILES = \
 	ft_atoi \
 	ft_calloc \
 	ft_strdup \
+	ft_strdup_v2 \
 	ft_substr \
 	ft_strjoin \
 	ft_strjoin_and_free \
@@ -74,7 +75,7 @@ $(OBJ_DIR)%.o: $(SRC_DIR)%.c $(OBJ_CACHE)
 
 $(NAME): $(OBJ)
 	@$(LIBC) $(NAME) $(OBJ) > /dev/null
-	@echo "$(CC) $(CFLAGS) $(INCLUDE) <- compilation flags used"
+	@echo "$(CC) $(CFLAGS) $(INCLUDE) <- compilation flags used for libft"
 	@echo "libft.a created"
 
 clean:
