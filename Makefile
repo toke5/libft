@@ -24,6 +24,7 @@ SRC_FILES = \
 	ft_strdup \
 	ft_substr \
 	ft_strjoin \
+	ft_strjoin_and_free \
 	ft_strtrim \
 	ft_split \
 	ft_itoa \
