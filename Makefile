@@ -48,7 +48,8 @@ SRC_FILES = \
 	ft_printf_hex \
 	ft_printf_nbr \
 	ft_strlen_null_safe \
-	get_next_line
+	get_next_line \
+	get_next_line_v2
 
 SRC_DIR = ./src/
 OBJ_DIR = ./obj/
