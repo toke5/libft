@@ -6,7 +6,7 @@
 /*   By: ttakala <ttakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/11 14:15:55 by ttakala           #+#    #+#             */
-/*   Updated: 2024/02/12 15:11:59 by ttakala          ###   ########.fr       */
+/*   Updated: 2024/02/12 18:05:07 by ttakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ int	vec_append(t_vec *dst, t_vec *src)
 		return (-1);
 	if (!dst->memory)
 	{
-		ft_memcpy(dst, src, sizeof(t_vec));
-		return (1);
+		if (vec_new(dst, 1, src->elem_size) == -1)
+			return (-1);
 	}
 	new_len = dst->len + src->len;
 	if (dst->alloc_size < new_len * dst->elem_size)
@@ -51,8 +51,8 @@ int	vec_prepend(t_vec *dst, t_vec *src)
 		return (-1);
 	if (!dst->memory)
 	{
-		ft_memcpy(dst, src, sizeof(t_vec));
-		return (1);
+		if (vec_new(dst, 1, src->elem_size) == -1)
+			return (-1);
 	}
 	if (vec_new(&result, dst->len + src->len, dst->elem_size) == -1)
 		return (-1);
