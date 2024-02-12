@@ -50,9 +50,10 @@ SRC_FILES = \
 	ft_strlen_null_safe \
 	get_next_line \
 	get_next_line_v2 \
-	vec_new_free \
-	vec_push_pop \
-	vec_append_prepend
+	vec_new_free_from_copy_resize \
+	vec_push_pop_get_insert_remove \
+	vec_append_prepend \
+	vec_iter_map_filter_reduce_find
 
 SRC_DIR = ./src/
 OBJ_DIR = ./obj/

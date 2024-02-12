@@ -6,7 +6,7 @@
 /*   By: ttakala <ttakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/11 14:11:23 by ttakala           #+#    #+#             */
-/*   Updated: 2024/02/12 15:13:22 by ttakala          ###   ########.fr       */
+/*   Updated: 2024/02/12 20:03:18 by ttakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stdlib.h>
 # include <stdint.h>
+# include <stdbool.h>
 
 typedef struct s_vec
 {
@@ -38,5 +39,11 @@ int		vec_remove(t_vec *src, size_t index);
 
 int		vec_append(t_vec *dst, t_vec *src);
 int		vec_prepend(t_vec *dst, t_vec *src);
+
+void	vec_iter(t_vec *src, void (*f) (void *));
+void	*vec_find(t_vec *src, bool (*f) (void *));
+int		vec_map(t_vec *dst, t_vec *src, void (*f) (void *));
+int		vec_filter(t_vec *dst, t_vec *src, bool (*f) (void *));
+int		vec_reduce(void *dst, t_vec *src, void (*f) (void *, void *));
 
 #endif
