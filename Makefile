@@ -49,7 +49,10 @@ SRC_FILES = \
 	ft_printf_nbr \
 	ft_strlen_null_safe \
 	get_next_line \
-	get_next_line_v2
+	get_next_line_v2 \
+	vec_new_free \
+	vec_push_pop \
+	vec_append_prepend
 
 SRC_DIR = ./src/
 OBJ_DIR = ./obj/
