@@ -6,7 +6,7 @@
 /*   By: ttakala <ttakala@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 13:16:30 by ttakala           #+#    #+#             */
-/*   Updated: 2023/12/22 14:40:06 by ttakala          ###   ########.fr       */
+/*   Updated: 2024/02/15 11:56:38 by ttakala          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,14 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
+	int	ret;
+
 	if (s != NULL)
 	{
-		write(fd, s, ft_strlen(s));
-		write(fd, "\n", sizeof(char));
+		ret = write(fd, s, ft_strlen(s));
+		if (ret == -1)
+			return ;
+		ret = write(fd, "\n", sizeof(char));
+		(void)ret;
 	}
 }
