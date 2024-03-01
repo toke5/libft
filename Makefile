@@ -16,6 +16,7 @@ SRC_FILES = \
 	ft_strchr \
 	ft_strrchr \
 	ft_strncmp \
+	ft_strcmp \
 	ft_memchr \
 	ft_memcmp \
 	ft_strnstr \
